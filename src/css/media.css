@@ -1,0 +1,287 @@
+@media (min-width: 768px) {
+  .hidden-md-up {
+    display: none; }
+  .parallax-slider__content .parallax-slider__stacked-buttons select {
+    color: #333333;
+    float: left;
+    font-size: 2.8rem;
+    font-family: "OpenSans";
+    background-color: #fff;
+    display: inline-block;
+    border: none;
+    height: 70px;
+    line-height: 70px;
+    width: 200px;
+    text-align: center;
+    -moz-text-align-last: center;
+         text-align-last: center; }
+    .parallax-slider__content .parallax-slider__stacked-buttons select:hover, .parallax-slider__content .parallax-slider__stacked-buttons select:focus, .parallax-slider__content .parallax-slider__stacked-buttons select.active {
+      color: #fff;
+      background-color: #333333; }
+    .parallax-slider__content .parallax-slider__stacked-buttons select:first-of-type {
+      -webkit-border-radius: 12px 0 0 12px;
+              border-radius: 12px 0 0 12px; }
+    .parallax-slider__content .parallax-slider__stacked-buttons select:last-of-type {
+      -webkit-border-radius: 0 12px 12px 0;
+              border-radius: 0 12px 12px 0; }
+    .parallax-slider__content .parallax-slider__stacked-buttons select:not(:last-of-type) {
+      border-right: 1px solid #b4b4b4; } }
+
+@media (max-width: 1200px) {
+  .header-content a {
+    width: 45%; }
+  #header-dropdown {
+    width: 35%; }
+  html {
+    font-size: 9px !important; }
+  .about-us__slider-image > img {
+    width: 100% !important; }
+  .parallax-slider__content .parallax-slider__stacked-buttons {
+    width: 100%; }
+  .parallax-slider__content .parallax-slider__stacked-buttons select {
+    width: 23%; }
+  .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
+    width: 2%; } }
+
+@media (max-width: 992px) {
+  html {
+    font-size: 8px !important; }
+  .fastest-way-get-visa {
+    height: 325px; }
+    .fastest-way-get-visa h2 {
+      font-size: 3.2rem;
+      letter-spacing: 3.2px;
+      margin: 220px 0 23px; } }
+
+@media (max-width: 767px) {
+  .hidden-md-down {
+    display: none; }
+  .fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #c00000;
+    z-index: 10000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s; }
+    .fixed .navbar-toggle .icon-bar {
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      background-color: #fff; }
+    .fixed .brand {
+      color: #fff; }
+  .navbar-toggle {
+    float: none;
+    width: 13%;
+    display: inline-block; }
+  .navbar-header {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+  .brand {
+    width: 80%;
+    letter-spacing: 5px !important;
+    display: inline-block !important;
+    min-height: 32px;
+    line-height: 32px;
+    color: #c00000;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: "PTBold"; }
+    .brand:hover, .brand:focus, .brand:active {
+      color: #fff; }
+  html {
+    font-size: 10px !important; }
+  header .col-sm-8 {
+    padding-right: 15px; }
+  header .navbar li a,
+  header .navbar li a:hover,
+  header .navbar li a:focus {
+    padding: 10px 0; }
+  header .navbar li .fa {
+    font-size: 2rem;
+    margin-bottom: 10px; }
+  header .nav {
+    padding-bottom: 15px; }
+  .header-content .header-content__search {
+    margin: 25px 0; }
+  .parallax-slider {
+    height: 500px;
+    background-image: none; }
+  .parallax-slider__content h1 {
+    font-size: 3.1rem;
+    color: #bcbcbc;
+    margin: 60px 0 30px; }
+    .parallax-slider__content h1 span {
+      color: #d50100; }
+  .parallax-slider__content .parallax-slider__stacked-buttons {
+    display: block;
+    width: 90%;
+    margin: 0 auto; }
+    .parallax-slider__content .parallax-slider__stacked-buttons label {
+      color: #b5b5b5;
+      width: 100%;
+      font-size: 1.8rem;
+      margin-bottom: 5px; }
+    .parallax-slider__content .parallax-slider__stacked-buttons select {
+      height: 35px;
+      line-height: 35px;
+      width: 100%;
+      border: none;
+      font-size: 1.8rem;
+      text-align: center;
+      -moz-text-align-last: center;
+           text-align-last: center;
+      background-color: #fff;
+      margin: 0 0 20px;
+      background-image: url("../img/icon-arrow-dropdown.png");
+      background-repeat: no-repeat;
+      background-position: 95% center; }
+  .visa-procedure__wrapper {
+    display: inline-block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .visa-procedure__wrapper .col-md-4:not(:last-child) .visa-procedure__block-img:after {
+      display: none; }
+  .visa-procedure__block-img {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 30px 0 15px; }
+  .visa-procedure__block-content {
+    display: inline-block;
+    width: 79%;
+    margin: 30px 0 15px; }
+    .visa-procedure__block-content h4 {
+      margin: 0; }
+  .fastest-way-get-visa h2 {
+    font-size: 2rem;
+    letter-spacing: 2px; }
+  .fastest-way-get-visa h2 + div {
+    font-size: 1.2rem;
+    letter-spacing: 0.2px; }
+  .about-us .owl-dot.active,
+  .about-us .owl-dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px; }
+  footer .footer-nav__logo {
+    display: block;
+    text-align: center;
+    margin: 20px 0; }
+    footer .footer-nav__logo img {
+      max-width: 100%; }
+  footer .nav-justified > li {
+    display: table-cell;
+    width: 1%; }
+  .footer-conten__social {
+    padding: 0;
+    text-align: center;
+    margin: 45px 0; }
+  .footer__copyright {
+    padding: 0px 0 200px; } }
+
+@media (max-width: 610px) {
+  .header-content a {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; }
+  #quick-links,
+  #header-dropdown {
+    width: 50%; }
+  .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
+    font-size: 2.1rem; }
+  .fastest-way-get-visa {
+    height: 225px; }
+    .fastest-way-get-visa h2 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      margin: 160px 0 10px; }
+  .about-us h2 {
+    font-size: 3rem; } }
+
+@media (max-width: 480px) {
+  .parallax-slider__content .parallax-slider__stacked-buttons button {
+    font-size: 1.5rem; }
+  .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
+    margin-left: 5px; }
+  .visa-procedure h2 {
+    font-size: 2.8rem; }
+  .visa-procedure__block-img {
+    width: 30%; }
+  .visa-procedure__block-content {
+    width: 69%; }
+  .more-info-required {
+    width: 100%;
+    margin: 20px auto; }
+    .more-info-required h2 {
+      font-size: 1.8rem; }
+    .more-info-required .selected-wrapper {
+      padding: 23px 0px 20px 9px;
+      font-size: 1.4rem; }
+    .more-info-required .selected-wrapper select,
+    .more-info-required .selected-wrapper .selected-wrapper_text {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 15px; } }
+
+@media (max-width: 410px) {
+  #quick-links,
+  #header-dropdown {
+    width: 100%;
+    border: none;
+    background-position: 90% center; }
+  .parallax-slider__content h1 {
+    font-size: 2.6rem; }
+  .visa-procedure__block-img,
+  .visa-procedure__block-content {
+    width: 100%;
+    margin: 20px 0 5px; }
+  .visa-procedure h2 {
+    font-size: 2.2rem; }
+  .fastest-way-get-visa {
+    height: 180px; }
+  .fastest-way-get-visa h2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 120px 0 5px; }
+  .fastest-way-get-visa h2 + div {
+    font-size: 1rem; }
+  .about-us h2 {
+    font-size: 2.5rem; }
+  .news-small-block h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    min-height: 70px;
+    padding: 15px 0 0; }
+  .news-small-block .news-small-block__content {
+    font-size: 1.2rem; }
+    .news-small-block .news-small-block__content p {
+      margin-bottom: 6px; }
+  .footer-conten__social li {
+    margin-right: 7%; }
+  footer .nav-justified > li {
+    width: 32%;
+    display: inline-block; } }
+
+@media (max-width: 390px) {
+  .parallax-slider__content h1 {
+    font-size: 2rem; } }
+
+@media (max-width: 320px) {
+  .visa-procedure h2 {
+    font-size: 1.8rem; }
+  .visa-procedure__block-content h4 {
+    font-size: 2rem; } }

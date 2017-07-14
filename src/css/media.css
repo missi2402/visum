@@ -41,7 +41,15 @@
   .parallax-slider__content .parallax-slider__stacked-buttons select {
     width: 23%; }
   .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
-    width: 2%; } }
+    width: 2%; }
+  .point-information table tbody tr td {
+    text-align: center; }
+  .point-information table tbody tr td:first-child {
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0; }
+  .point-information table tbody tr td:last-child {
+    min-width: 50%; } }
 
 @media (max-width: 992px) {
   html {
@@ -191,7 +199,24 @@
     text-align: center;
     margin: 45px 0; }
   .footer__copyright {
-    padding: 0px 0 200px; } }
+    padding: 0px 0 200px; }
+  main.main-step-3 section {
+    padding: 0 5%; }
+  .warnings-information__list {
+    font-size: 1.8rem; }
+    .warnings-information__list li {
+      padding-left: 25px;
+      letter-spacing: 0.3px; }
+      .warnings-information__list li:before {
+        left: 5px; }
+  .required-documents .panel-title a {
+    font-size: 1.8rem; }
+  .required-documents .panel {
+    padding: 0 10px; }
+  .required-documents .colapsed-block {
+    margin: 10px -5px -10px 0; }
+    .required-documents .colapsed-block img {
+      margin-left: 10px; } }
 
 @media (max-width: 610px) {
   .header-content a {

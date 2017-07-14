@@ -695,13 +695,14 @@ footer {
         }
         a,
         a:hover,
-        a:focus {
+        a:focus {            
             padding: 18px 0;
             color: $white;
             white-space: nowrap;
             font-size: 12px;
             text-decoration: none;
             background-color: transparent;
+            font-family: "MyriadProRegular";
         }
     }
 }
@@ -750,12 +751,10 @@ footer {
 
 /*  Step 3 */
 main.main-step-3 {
-	float: left;
 	width: 100%;
 	position: relative;
 	section {
 		padding: 0 7.3%;
-		float: left;
 		width: 100%;		
 	}
 }
@@ -769,7 +768,7 @@ main.main-step-3 {
 		text-align: center;
 		text-transform: uppercase;
 		font-family: "OpenSans";
-		margin: 45px 0 28px;
+		padding: 45px 0 28px;
 		letter-spacing: -1.3px;
 	}
 	table {
@@ -848,9 +847,6 @@ main.main-step-3 {
 		padding: 15px 0;
 		text-align: center;		
 	}
-	ul {
-		font-size: 2.1rem;		
-	}
 } 
 
 .warnings-information__list {
@@ -880,7 +876,7 @@ main.main-step-3 {
 
 .required-documents {
 	background-color: $white;
-	margin-bottom: 55px;
+	padding-bottom: 55px;
 	h3 {
 		color: #121212;
 		font-size: 2rem;
@@ -907,6 +903,8 @@ main.main-step-3 {
 			text-transform: uppercase;
 			text-decoration: none;
 			font-family: "OpenSansSM";
+            display: flex;
+            justify-content: space-between;
 		}
 	}
 	.panel-body {
@@ -915,6 +913,37 @@ main.main-step-3 {
 		font-family: "OpenSans";
 		padding: 0 0 30px;
 	}
+    .colapsed-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 16px;
+        text-transform: none;
+        margin: 10px -15px -10px 0;
+        img {
+            margin-left: 20px;
+        }
+    }
+    [aria-expanded="false"] .if-not-collapsed {
+      display: none;
+        + img {
+            transition: all .3s ease;
+            transform: rotate(0deg);
+        } 
+    }
+    [aria-expanded="false"] .if-collapsed {
+      display: block;
+    }
+    [aria-expanded="true"] .if-collapsed {
+      display: none;
+    }
+    [aria-expanded="true"] .if-not-collapsed {
+      display: block;
+        + img {
+            transition: all .3s ease;
+            transform: rotate(180deg);
+        } 
+    }
 }
 
 .tips-and-explanations {

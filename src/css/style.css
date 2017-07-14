@@ -640,7 +640,8 @@ footer {
     white-space: nowrap;
     font-size: 12px;
     text-decoration: none;
-    background-color: transparent; }
+    background-color: transparent;
+    font-family: "MyriadProRegular"; }
 
 .footer-content {
   font-size: 1.2rem;
@@ -678,12 +679,10 @@ footer {
 
 /*  Step 3 */
 main.main-step-3 {
-  float: left;
   width: 100%;
   position: relative; }
   main.main-step-3 section {
     padding: 0 7.3%;
-    float: left;
     width: 100%; }
 
 .point-information {
@@ -695,7 +694,7 @@ main.main-step-3 {
     text-align: center;
     text-transform: uppercase;
     font-family: "OpenSans";
-    margin: 45px 0 28px;
+    padding: 45px 0 28px;
     letter-spacing: -1.3px; }
   .point-information table {
     width: 100%;
@@ -757,8 +756,6 @@ main.main-step-3 {
     font-size: 2.1rem;
     padding: 15px 0;
     text-align: center; }
-  .warnings-information ul {
-    font-size: 2.1rem; }
 
 .warnings-information__list {
   color: #333333;
@@ -783,7 +780,7 @@ main.main-step-3 {
 
 .required-documents {
   background-color: #fff;
-  margin-bottom: 55px; }
+  padding-bottom: 55px; }
   .required-documents h3 {
     color: #121212;
     font-size: 2rem;
@@ -806,12 +803,58 @@ main.main-step-3 {
     padding: 28.5px 5px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "OpenSansSM"; }
+    font-family: "OpenSansSM";
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .required-documents .panel-body {
     color: #000;
     font-size: 1.95rem;
     font-family: "OpenSans";
     padding: 0 0 30px; }
+  .required-documents .colapsed-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 16px;
+    text-transform: none;
+    margin: 10px -15px -10px 0; }
+    .required-documents .colapsed-block img {
+      margin-left: 20px; }
+  .required-documents [aria-expanded="false"] .if-not-collapsed {
+    display: none; }
+    .required-documents [aria-expanded="false"] .if-not-collapsed + img {
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+              transform: rotate(0deg); }
+  .required-documents [aria-expanded="false"] .if-collapsed {
+    display: block; }
+  .required-documents [aria-expanded="true"] .if-collapsed {
+    display: none; }
+  .required-documents [aria-expanded="true"] .if-not-collapsed {
+    display: block; }
+    .required-documents [aria-expanded="true"] .if-not-collapsed + img {
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
 
 .tips-and-explanations {
   background-color: #ebebeb; }

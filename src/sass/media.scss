@@ -3,7 +3,7 @@
 		display: none;
 	}
 	.parallax-slider__content .parallax-slider__stacked-buttons {
-        select {
+        .nice-select {
             color: #333333;
             float: left;
             font-size: 2.8rem;
@@ -11,11 +11,21 @@
             background-color: #fff;
             display: inline-block;
             border: none;
+            width: 200px;
             height: 70px;
             line-height: 70px;
-            width: 200px;
             text-align: center;
   			text-align-last: center;
+            border-radius: 0;
+            &.open .list {                
+                min-width: 200px;
+            }
+            .option {
+                color: #333333;
+            }
+            &:after {
+                display: none;
+            }
             &:hover,
             &:focus,
             &.active {
@@ -25,10 +35,10 @@
             &:first-of-type {
                 border-radius: 12px 0 0 12px;
             } 
-            &:last-of-type {
+            &:nth-child(12) {
                 border-radius: 0 12px 12px 0;
             }
-            &:not(:last-of-type) {
+            &:not(:nth-child(12)) {
             	border-right: 1px solid #b4b4b4;
             }
         } 
@@ -95,6 +105,9 @@
 }
 
 @media (max-width: 767px) {
+    .nice-select.open .list {
+        width: 100%;
+    }
 	.hidden-md-down {
 		display: none;
 	}
@@ -145,23 +158,49 @@
     html {
         font-size: 10px !important;
     }
+    header .row,
+    header .col-sm-4 {
+        display: block;
+    }
     header .col-sm-8 {
+        display: block;
         padding-right: 15px;
     }
     header .navbar li a,
     header .navbar li a:hover,
     header .navbar li a:focus {
         padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     header .navbar li .fa {
         font-size: 2rem;
-        margin-bottom: 10px;
+        margin-bottom: 0;
+        margin-right: 10px;
     }
     header .nav {
         padding-bottom: 15px;
+        margin-top: -15px;
     }
-    .header-content .header-content__search {
-        margin: 25px 0;
+    .header-content a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #quick-links + .nice-select,
+    #header-dropdown + .nice-select {
+        width: 49%;
+        display: inline-block;
+    }
+    .header-content {
+        .header-content__search {
+            margin: 15px 0;
+        }
+        .nice-select {
+            float: none;
+        }
     }
     .parallax-slider {
     	height: 500px;
@@ -184,8 +223,9 @@
         	width: 100%;
         	font-size: 1.8rem;
         	margin-bottom: 5px;
+            font-family: "MyriadProRegular";
         }
-        select {
+        .nice-select {
         	height: 35px;
         	line-height: 35px;
         	width: 100%;
@@ -195,9 +235,15 @@
         	text-align-last: center;
         	background-color: #fff;
         	margin: 0 0 20px;
-        	background-image: url("../img/icon-arrow-dropdown.png");
-        	background-repeat: no-repeat;
-        	background-position: 95% center;
+            font-family: "MyriadProRegular";
+            &:after {
+                width: 12px;
+                height: 12px;
+                margin-top: -9px;
+                right: 36px;
+                border-bottom: 2px solid #000;
+                border-right: 2px solid #000;
+            }
         }
     }
     .visa-procedure__wrapper {
@@ -274,6 +320,8 @@
             }
         }
     }
+    .required-documents .panel-title a:focus,
+    .required-documents .panel-title a:hover,
     .required-documents .panel-title a {
         font-size: 1.8rem;
     }
@@ -291,15 +339,6 @@
 }
 
 @media (max-width: 610px) {
-    .header-content a {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    #quick-links,
-    #header-dropdown {
-        width: 50%;
-    }
     .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
         font-size: 2.1rem;
     }
@@ -352,11 +391,12 @@
 }
 
 @media (max-width: 410px) {
-    #quick-links,
-    #header-dropdown {
+    #quick-links + .nice-select,
+    #header-dropdown + .nice-select {
         width: 100%;
         border: none;
         background-position: 90% center;
+        padding: 5px 0 5px 20px;
     }
     .parallax-slider__content h1 {
         font-size: 2.6rem;

@@ -15,6 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/nice-select.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
 </head>
@@ -208,7 +209,7 @@
                 <li>Zometeen gaat u het aanvraagformulier en opdrachtformulier via onze website invullen, hier zult u ook deze informatie terugvinden.</li>
                 <li>Hongkong en Macau behoren niet tot het visum territorium van China. Als u van plan bent om naar een andere stad te reizen en u wilt in de tussentijd op en neer naar Hongkong of Macau, dan heeft u dus een double entry nodig.</li>
                 <li>U moet persoonlijk uw visum aanvragen, hierdoor is het voor ons onbekend wat de tarieven zijn en de geldigheid van het visum</li>
-                <li><b>VISUMGELDIGHEID / VERBLIJFSDUUR</b>Dit visum is geldig vanaf de datum van afgifte. De inreis moet voor de vervaldatum van het visum plaatsvinden. Vanaf de datum van inreis mag standaard maximaal 14 dagen worden verbleven in Bahrein. Verlenging van het verblijf is ter plaatse mogelijk bij de zg. ‘Nationality, Passport and Residence Affairs Office’ (NPRA) in Bahrein onder betaling van het lokaal geldende verlengingstarief. Het is te allen tijde aan de lokale autoriteiten om al dan niet een verlenging toe te kennen zonder opgaaf van redenen. De toegekende verblijfsduur blijft ter beoordeling van de ambassade en kan in uitzonderlijke gevallen afwijken van de standaard.</li>
+                <li><span>VISUMGELDIGHEID / VERBLIJFSDUUR</span>Dit visum is geldig vanaf de datum van afgifte. De inreis moet voor de vervaldatum van het visum plaatsvinden. Vanaf de datum van inreis mag standaard maximaal 14 dagen worden verbleven in Bahrein. Verlenging van het verblijf is ter plaatse mogelijk bij de zg. ‘Nationality, Passport and Residence Affairs Office’ (NPRA) in Bahrein onder betaling van het lokaal geldende verlengingstarief. Het is te allen tijde aan de lokale autoriteiten om al dan niet een verlenging toe te kennen zonder opgaaf van redenen. De toegekende verblijfsduur blijft ter beoordeling van de ambassade en kan in uitzonderlijke gevallen afwijken van de standaard.</li>
                 <li>Zakenvisum met een verblijfsduur van maximaal 30 dagen per entry in Bangladesh en met een geldigheidsduur van 3 maanden, vanaf het moment van uitgifte</li>
                 <li>Toeristen single entry visum met een verblijfsduur van maximaal 45 dagen in het land. Het visum heeft na datum van uitgifte een geldigheidsduur van</li>
             </ul>
@@ -258,38 +259,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-    <script>
-    //прилипание заголовка при скролле с отступом на header
-    var num = $("header").outerHeight() - 50; //number of pixels before modifying styles
-    $(window).bind('scroll', function() {
-        if ($(window).scrollTop() > num) {
-            $('.navbar').addClass('fixed');
-        } else {
-            $('.navbar').removeClass('fixed');
-        }
-    });
-    $('.news-small-block-match-height').matchHeight(false);
-    $('.news-small-block-match-height h3').matchHeight(false);
-    $('#owl-carousel__about-us').owlCarousel({
-        loop: true,
-        margin: 10,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            460: {
-                items: 2
-            },
-            650: {
-                items: 3
-            },
-            900: {
-                items: 4
-            }
-        }
-    });
-    </script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

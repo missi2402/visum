@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   .hidden-md-up {
     display: none; }
-  .parallax-slider__content .parallax-slider__stacked-buttons select {
+  .parallax-slider__content .parallax-slider__stacked-buttons .nice-select {
     color: #333333;
     float: left;
     font-size: 2.8rem;
@@ -9,22 +9,30 @@
     background-color: #fff;
     display: inline-block;
     border: none;
+    width: 200px;
     height: 70px;
     line-height: 70px;
-    width: 200px;
     text-align: center;
     -moz-text-align-last: center;
-         text-align-last: center; }
-    .parallax-slider__content .parallax-slider__stacked-buttons select:hover, .parallax-slider__content .parallax-slider__stacked-buttons select:focus, .parallax-slider__content .parallax-slider__stacked-buttons select.active {
+         text-align-last: center;
+    -webkit-border-radius: 0;
+            border-radius: 0; }
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select.open .list {
+      min-width: 200px; }
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select .option {
+      color: #333333; }
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:after {
+      display: none; }
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:hover, .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:focus, .parallax-slider__content .parallax-slider__stacked-buttons .nice-select.active {
       color: #fff;
       background-color: #333333; }
-    .parallax-slider__content .parallax-slider__stacked-buttons select:first-of-type {
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:first-of-type {
       -webkit-border-radius: 12px 0 0 12px;
               border-radius: 12px 0 0 12px; }
-    .parallax-slider__content .parallax-slider__stacked-buttons select:last-of-type {
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:nth-child(12) {
       -webkit-border-radius: 0 12px 12px 0;
               border-radius: 0 12px 12px 0; }
-    .parallax-slider__content .parallax-slider__stacked-buttons select:not(:last-of-type) {
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:not(:nth-child(12)) {
       border-right: 1px solid #b4b4b4; } }
 
 @media (max-width: 1200px) {
@@ -62,6 +70,8 @@
       margin: 220px 0 23px; } }
 
 @media (max-width: 767px) {
+  .nice-select.open .list {
+    width: 100%; }
   .hidden-md-down {
     display: none; }
   .fixed {
@@ -103,19 +113,48 @@
       color: #fff; }
   html {
     font-size: 10px !important; }
+  header .row,
+  header .col-sm-4 {
+    display: block; }
   header .col-sm-8 {
+    display: block;
     padding-right: 15px; }
   header .navbar li a,
   header .navbar li a:hover,
   header .navbar li a:focus {
-    padding: 10px 0; }
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   header .navbar li .fa {
     font-size: 2rem;
-    margin-bottom: 10px; }
+    margin-bottom: 0;
+    margin-right: 10px; }
   header .nav {
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    margin-top: -15px; }
+  .header-content a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center; }
+  #quick-links + .nice-select,
+  #header-dropdown + .nice-select {
+    width: 49%;
+    display: inline-block; }
   .header-content .header-content__search {
-    margin: 25px 0; }
+    margin: 15px 0; }
+  .header-content .nice-select {
+    float: none; }
   .parallax-slider {
     height: 500px;
     background-image: none; }
@@ -133,8 +172,9 @@
       color: #b5b5b5;
       width: 100%;
       font-size: 1.8rem;
-      margin-bottom: 5px; }
-    .parallax-slider__content .parallax-slider__stacked-buttons select {
+      margin-bottom: 5px;
+      font-family: "MyriadProRegular"; }
+    .parallax-slider__content .parallax-slider__stacked-buttons .nice-select {
       height: 35px;
       line-height: 35px;
       width: 100%;
@@ -145,9 +185,14 @@
            text-align-last: center;
       background-color: #fff;
       margin: 0 0 20px;
-      background-image: url("../img/icon-arrow-dropdown.png");
-      background-repeat: no-repeat;
-      background-position: 95% center; }
+      font-family: "MyriadProRegular"; }
+      .parallax-slider__content .parallax-slider__stacked-buttons .nice-select:after {
+        width: 12px;
+        height: 12px;
+        margin-top: -9px;
+        right: 36px;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000; }
   .visa-procedure__wrapper {
     display: inline-block;
     -webkit-box-orient: vertical;
@@ -209,6 +254,8 @@
       letter-spacing: 0.3px; }
       .warnings-information__list li:before {
         left: 5px; }
+  .required-documents .panel-title a:focus,
+  .required-documents .panel-title a:hover,
   .required-documents .panel-title a {
     font-size: 1.8rem; }
   .required-documents .panel {
@@ -219,13 +266,6 @@
       margin-left: 10px; } }
 
 @media (max-width: 610px) {
-  .header-content a {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 30px; }
-  #quick-links,
-  #header-dropdown {
-    width: 50%; }
   .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
     font-size: 2.1rem; }
   .fastest-way-get-visa {
@@ -263,11 +303,12 @@
       margin-bottom: 15px; } }
 
 @media (max-width: 410px) {
-  #quick-links,
-  #header-dropdown {
+  #quick-links + .nice-select,
+  #header-dropdown + .nice-select {
     width: 100%;
     border: none;
-    background-position: 90% center; }
+    background-position: 90% center;
+    padding: 5px 0 5px 20px; }
   .parallax-slider__content h1 {
     font-size: 2.6rem; }
   .visa-procedure__block-img,

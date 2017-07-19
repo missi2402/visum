@@ -70,23 +70,26 @@
     	width: 2%;
     }
     .point-information {
-        table {
-            tbody {
-                tr {
-                    td {
-                        text-align: center;
-                    }
-                    td:first-child {
-                        width: 50%;
-                        padding-left: 0;
-                        padding-right: 0;
-                    }
-                    td:last-child {
-                        min-width: 50%;
-                    }
-                }
-            }
-        }
+        .table {
+			.point-information__header {
+				font-size: 2rem;
+				text-transform: uppercase;
+				padding: 15px 0;
+				text-align: center;
+			}
+			.point-information__content {
+				> div {
+					&:first-child {
+						width: 59%;
+						text-align: center;
+						padding-left: 0;
+					}
+					&:last-child {
+						text-align: center;
+					}
+				}
+			}
+		}
     }
     .main-step-4 {
         form {
@@ -407,6 +410,9 @@
 	    margin-left: auto;
 	    display: block;
 	    margin-right: 30px;
+	}
+	.point-information .table .point-information__content {
+	    font-size: 1.5rem;
 	}
 }
 

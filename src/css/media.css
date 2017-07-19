@@ -50,14 +50,17 @@
     width: 23%; }
   .parallax-slider__content .parallax-slider__stacked-buttons .fa-search {
     width: 2%; }
-  .point-information table tbody tr td {
+  .point-information .table .point-information__header {
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 15px 0;
     text-align: center; }
-  .point-information table tbody tr td:first-child {
-    width: 50%;
-    padding-left: 0;
-    padding-right: 0; }
-  .point-information table tbody tr td:last-child {
-    min-width: 50%; }
+  .point-information .table .point-information__content > div:first-child {
+    width: 59%;
+    text-align: center;
+    padding-left: 0; }
+  .point-information .table .point-information__content > div:last-child {
+    text-align: center; }
   .main-step-4 form {
     margin: 0 10px; } }
 
@@ -312,7 +315,9 @@
     width: 40%;
     margin-left: auto;
     display: block;
-    margin-right: 30px; } }
+    margin-right: 30px; }
+  .point-information .table .point-information__content {
+    font-size: 1.5rem; } }
 
 @media (max-width: 410px) {
   #quick-links + .nice-select,

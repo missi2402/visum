@@ -289,7 +289,11 @@ header .col-sm-4 {
     background-color: #22c064;
     text-align: center;
     padding: 15px 0; }
-    .more-info-required .button-wrapper button {
+    .more-info-required .button-wrapper a {
+      left: 0;
+      color: #000;
+      display: block;
+      margin: 0 auto;
       width: 113px;
       height: 53px;
       font-size: 1.585rem;
@@ -302,15 +306,17 @@ header .col-sm-4 {
       position: relative;
       z-index: 2;
       text-transform: uppercase;
-      -webkit-transition: all .3s ease;
-      transition: all .3s ease; }
-      .more-info-required .button-wrapper button:hover {
-        margin-left: 15px;
-        -webkit-transition: all .3s ease;
-        transition: all .3s ease; }
-      .more-info-required .button-wrapper button span {
+      -webkit-transition: left .3s ease;
+      transition: left .3s ease; }
+      .more-info-required .button-wrapper a:hover {
+        left: 15px;
+        color: #000;
+        text-decoration: none;
+        -webkit-transition: left .3s ease;
+        transition: left .3s ease; }
+      .more-info-required .button-wrapper a span {
         z-index: 3; }
-      .more-info-required .button-wrapper button span:after {
+      .more-info-required .button-wrapper a span:after {
         content: "";
         transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -760,40 +766,40 @@ main.main-step-3 {
     font-family: "OpenSans";
     padding: 45px 0 28px;
     letter-spacing: -1.3px; }
-  .point-information table {
+  .point-information .table {
     width: 100%;
     font-family: "OpenSans";
     border-collapse: collapse;
     border-spacing: 0;
     background-color: #e0483e; }
-    .point-information table tr {
+    .point-information .table > div {
       padding: 15px 0;
       color: #fff;
       border-bottom: 1px solid #b82f26; }
-    .point-information table thead {
+    .point-information .table .point-information__header {
       font-size: 2rem;
-      text-transform: uppercase; }
-      .point-information table thead th {
-        padding: 15px 0;
-        text-align: center; }
-    .point-information table tbody {
-      font-size: 1.9rem; }
-      .point-information table tbody tr:last-child {
-        border-bottom: none; }
-      .point-information table tbody tr td:first-child {
-        width: 30%;
-        padding-left: 42%;
-        padding-right: 5%; }
-      .point-information table tbody tr td:last-child {
-        min-width: 30%; }
-      .point-information table tbody td {
-        padding: 18px 0; }
-    .point-information table tfoot {
-      background-color: #c94138; }
-      .point-information table tfoot td {
-        text-align: center;
-        padding: 7px 0 12px; }
-    .point-information table button {
+      text-transform: uppercase;
+      padding: 15px 0;
+      text-align: center; }
+    .point-information .table .point-information__content {
+      font-size: 1.9rem;
+      padding: 18px 0; }
+      .point-information .table .point-information__content > div {
+        display: inline-block; }
+        .point-information .table .point-information__content > div:first-child {
+          width: 60%;
+          padding-left: 42.5%; }
+        .point-information .table .point-information__content > div:last-child {
+          width: 39%; }
+    .point-information .table .point-information__footer {
+      background-color: #c94138;
+      text-align: center;
+      padding: 7px 0 12px; }
+    .point-information .table a {
+      display: block;
+      margin: 0 auto;
+      color: #fff;
+      max-width: 200px;
       font-size: 1.5rem;
       padding: 14px 74px;
       -webkit-border-radius: 30px;
@@ -804,7 +810,9 @@ main.main-step-3 {
       font-family: "OpenSansSM";
       -webkit-transition: all .3s ease;
       transition: all .3s ease; }
-      .point-information table button:hover {
+      .point-information .table a:hover {
+        color: #fff;
+        text-decoration: none;
         -webkit-transition: all .3s ease;
         transition: all .3s ease;
         background-color: #e0483e; }

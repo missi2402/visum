@@ -330,7 +330,11 @@ header .col-sm-4 {
 		background-color: #22c064;
 		text-align: center;
 		padding: 15px 0;
-		button {
+		a {
+			left: 0;
+			color: #000;
+			display: block;
+			margin: 0 auto;
 			width: 113px;
 			height: 53px; 
 			font-size: 1.585rem;
@@ -342,10 +346,12 @@ header .col-sm-4 {
 			position: relative;
 			z-index: 2;
 			text-transform: uppercase;
-            transition: all .3s ease;
+            transition: left .3s ease;
             &:hover {
-                margin-left: 15px;
-                transition: all .3s ease;
+            	left: 15px;
+            	color: #000;
+            	text-decoration: none;
+                transition: left .3s ease;
             }
 			span {
 				z-index: 3;
@@ -818,52 +824,47 @@ main.main-step-3 {
 		padding: 45px 0 28px;
 		letter-spacing: -1.3px;
 	}
-	table {
+	.table {
 		width: 100%;
 		font-family: "OpenSans";
 		border-collapse: collapse;
 		border-spacing: 0;
 		background-color: $tableBcg;
-		tr {
+		> div {
 			padding: 15px 0;
 			color: #fff;
 			border-bottom: 1px solid $tableBottomLine;
 		}
-		thead {
+		.point-information__header {
 			font-size: 2rem;
 			text-transform: uppercase;
-			th {
-				padding: 15px 0;
-				text-align: center;
-			}
+			padding: 15px 0;
+			text-align: center;
 		}
-		tbody {
+		.point-information__content {
 			font-size: 1.9rem;
-			tr:last-child {
-				border-bottom: none;
-			}
-			tr {
-				td:first-child {
-					width: 30%;
-					padding-left: 42%;
-    				padding-right: 5%;
+			padding: 18px 0; 
+			> div {
+				&:first-child {
+					width: 60%;
+					padding-left: 42.5%;
 				}
-				td:last-child {
-					min-width: 30%;
+				&:last-child {
+					width: 39%;
 				}
-			}
-			td {
-				padding: 18px 0; 					
+				display: inline-block;
 			}
 		}
-		tfoot {
+		.point-information__footer {
 			background-color: $tableFoot;
-			td {
-				text-align: center;
-				padding: 7px 0 12px; 					
-			}
+			text-align: center;
+			padding: 7px 0 12px; 					
 		}
-		button {
+		a {
+			display: block;
+			margin: 0 auto;
+			color: #fff;
+			max-width: 200px;
 			font-size: 1.5rem;
 			padding: 14px 74px;
 			border-radius: 30px;
@@ -873,6 +874,8 @@ main.main-step-3 {
 			font-family: "OpenSansSM";
             transition: all .3s ease;
             &:hover {
+            	color: #fff;
+            	text-decoration: none;
                 transition: all .3s ease;
                 background-color: #e0483e;
             }
